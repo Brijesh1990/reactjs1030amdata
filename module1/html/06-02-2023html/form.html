@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+        .navbar 
+        {
+            width: 100%;
+            height: auto;
+            padding: 5px;
+            background-color: black;
+        }
+        .navbar ul li 
+        {
+            display: inline-block;
+            padding: 0px 35px;
+        }
+        .navbar a 
+        {
+            color: white;
+            text-decoration: none;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        .dropdown 
+        {
+            width: 200px;
+            height: auto;
+            padding: 5px;
+            position: relative;
+        }
+        .dropdown-menu 
+        {
+            display: none;
+            position: absolute;
+            background-color: black;
+            color: white;
+            padding: 10px 5px;
+        }
+        .dropdown:hover .dropdown-menu
+        {
+            display: block;
+            padding: 5px 15px;
+        }
+
+        .form 
+        {
+            width: 38%;
+            height: auto;
+            margin: auto;
+            padding: 25px;
+            background-color: white;
+            margin-top: 2%;
+            border-radius: 8px;
+        }
+
+        input[type="text"], input[type="password"]
+           {
+            width: 250px;
+            height: auto;
+            margin: auto;
+            padding: 5px;
+            margin-top: 2%;
+           }
+
+           input[type="submit"]
+           {
+            width: 120px;
+            height: auto;
+            margin: auto;
+            padding: 8px;
+            margin-top: 2%;
+            background-color: red;
+            border: none;
+            color: white;
+           }
+           
+        </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li class="dropdown"><a href="">Select Category</a>
+            <ul class="dropdown-menu">
+                <li><a href="">Home furnitures</a></li>
+                <li><a href="">Electronics</a></li>
+            </ul>
+            </li>
+
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Our gallery</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+
+        </ul>
+    </div>
+
+    <div class="form">
+        <h1 align="center">Login Form</h1>
+
+        <form method="post">
+            <table align="center">
+                <tr>
+                    <th>Email *</th>
+                    <td><input type="text" name="email" placeholder="Email *" required></td>
+                </tr>
+
+                <tr>
+                    <th>Password *</th>
+                    <td><input type="password" name="password" placeholder="Password *" required></td>
+                </tr>
+
+                <tr>
+                    <td align="center" colspan="2"><input type="submit" name="log" value="login"  required>
+                    <a href="">Forget password</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>
