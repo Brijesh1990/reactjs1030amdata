@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.css'>
+
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+        .navbar 
+        {
+            width: 100%;
+            height: auto;
+            padding: 5px;
+            background-color: black;
+        }
+        .navbar ul li 
+        {
+            display: inline-block;
+            padding: 0px 35px;
+        }
+        .navbar a 
+        {
+            color: white;
+            text-decoration: none;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        .dropdown 
+        {
+            width: 200px;
+            height: auto;
+            padding: 5px;
+            position: relative;
+        }
+        .dropdown-menu 
+        {
+            display: none;
+            position: absolute;
+            background-color: black;
+            color: white;
+            padding: 10px 5px;
+        }
+        .dropdown:hover .dropdown-menu
+        {
+            display: block;
+            padding: 5px 15px;
+        }
+
+        .form 
+        {
+            width: 80%;
+            height: auto;
+            margin: auto;
+            padding: 25px;
+            background-color: white;
+            margin-top: 2%;
+            border-radius: 8px;
+        }
+
+        input[type="text"], input[type="password"]
+           {
+            width: 250px;
+            height: auto;
+            margin: auto;
+            padding: 5px;
+            margin-top: 2%;
+           }
+
+           input[type="submit"]
+           {
+            width: 120px;
+            height: auto;
+            margin: auto;
+            padding: 8px;
+            margin-top: 2%;
+            background-color: red;
+            border: none;
+            color: white;
+           }
+          
+
+           tr:nth-child(odd)
+           {
+            background-color: black;
+            color: white;
+           }
+
+           
+           tr:nth-child(even)
+           {
+            background-color: lightcoral;
+            color: white;
+           }
+           
+        </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li class="dropdown"><a href="">Select Category</a>
+            <ul class="dropdown-menu">
+                <li><a href="">Home furnitures</a></li>
+                <li><a href="">Electronics</a></li>
+            </ul>
+            </li>
+
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Our gallery</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+
+        </ul>
+    </div>
+
+    <div class="form">
+
+        <table  width="80%" align="center" border="1" cellpadding="5" cellspacing="5">
+            <thead>
+                <th>id</th>
+                <th>name</th>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>email</th>
+                <th>gender</th>
+                <th>dob</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1001</td>
+                <td>Ayushi</td>
+                <td>ayushi</td>
+                <td>pandya</td>
+                <td>ayushi@gmail.com</td>
+                <td>female</td>
+                <td>04/07/1992</td>
+                <td><a href="" onclick="return confirm('Are you sure to Read Data ?')"> <span class="fa fa-book"></span></a> &nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to delete Data ?')"><span class="fa fa-trash"></span></a>&nbsp;&nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to Edit Data ?')"><span class="fa fa-edit"></span></a></td>
+            </tr>
+
+            <tr>
+                <td>1001</td>
+                <td>Ayushi</td>
+                <td>ayushi</td>
+                <td>pandya</td>
+                <td>ayushi@gmail.com</td>
+                <td>female</td>
+                <td>04/07/1992</td>
+                <td><a href="" onclick="return confirm('Are you sure to Read Data ?')"> <span class="fa fa-book"></span></a> &nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to delete Data ?')"><span class="fa fa-trash"></span></a>&nbsp;&nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to Edit Data ?')"><span class="fa fa-edit"></span></a></td>
+            </tr>
+
+            <tr>
+                <td>1001</td>
+                <td>Ayushi</td>
+                <td>ayushi</td>
+                <td>pandya</td>
+                <td>ayushi@gmail.com</td>
+                <td>female</td>
+                <td>04/07/1992</td>
+                <td><a href="" onclick="return confirm('Are you sure to Read Data ?')"> <span class="fa fa-book"></span></a> &nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to delete Data ?')"><span class="fa fa-trash"></span></a>&nbsp;&nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to Edit Data ?')"><span class="fa fa-edit"></span></a></td>
+            </tr>
+
+            <tr>
+                <td>1001</td>
+                <td>Ayushi</td>
+                <td>ayushi</td>
+                <td>pandya</td>
+                <td>ayushi@gmail.com</td>
+                <td>female</td>
+                <td>04/07/1992</td>
+                <td><a href="" onclick="return confirm('Are you sure to Read Data ?')"> <span class="fa fa-book"></span></a> &nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to delete Data ?')"><span class="fa fa-trash"></span></a>&nbsp;&nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to Edit Data ?')"><span class="fa fa-edit"></span></a></td>
+            </tr>
+
+            <tr>
+                <td>1001</td>
+                <td>Ayushi</td>
+                <td>ayushi</td>
+                <td>pandya</td>
+                <td>ayushi@gmail.com</td>
+                <td>female</td>
+                <td>04/07/1992</td>
+                <td><a href="" onclick="return confirm('Are you sure to Read Data ?')"> <span class="fa fa-book"></span></a> &nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to delete Data ?')"><span class="fa fa-trash"></span></a>&nbsp;&nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to Edit Data ?')"><span class="fa fa-edit"></span></a></td>
+            </tr>
+
+            <tr>
+                <td>1001</td>
+                <td>Ayushi</td>
+                <td>ayushi</td>
+                <td>pandya</td>
+                <td>ayushi@gmail.com</td>
+                <td>female</td>
+                <td>04/07/1992</td>
+                <td><a href="" onclick="return confirm('Are you sure to Read Data ?')"> <span class="fa fa-book"></span></a> &nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to delete Data ?')"><span class="fa fa-trash"></span></a>&nbsp;&nbsp; &nbsp;<a href="" onclick="return confirm('Are you sure to Edit Data ?')"><span class="fa fa-edit"></span></a></td>
+            </tr>
+            </tbody>
+
+        </table>
+   
+    </div>
+
+</body>
+</html>
