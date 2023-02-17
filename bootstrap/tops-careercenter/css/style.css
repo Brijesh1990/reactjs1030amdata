@@ -1,0 +1,71 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background: url('../images/login-bg.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar 
+{
+    width: 100%;
+    height: auto;
+    background-color: #ecf5fb !important;
+}
+
+.navbar-brand 
+{
+    width: 30%;
+    height: auto;
+} 
+.navbar-brand img 
+{
+    width: 80%;
+    height: auto;
+}
+
+.navbar-link li 
+{
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.navbar-link a 
+{
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.card 
+{
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #edf5fb;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .card 
+{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #edf5fb;
+}
+.navbar-brand 
+{
+    width: 70%;
+    height: auto;
+} 
+
+.navbar-link li 
+{
+    display:block;
+    padding: 5px 15px;
+}
+}

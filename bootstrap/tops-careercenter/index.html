@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- online CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- online cdn js -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- navbar for tops careercenter -->
+  <nav class="navbar nav navbar-expand-md">
+    <!-- logo here -->
+    <a href="" class="navbar-brand p-3"><img src="images/TOPS-logo.png"></a>
+    <!-- main navbar -->
+    <!-- toggler -->
+    <button type="button" class="btn btn-sm navbar-toggler" data-bs-toggle="collapse" data-bs-target="#btn-click">
+        <i class="bi bi-grid-3x3-gap"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="btn-click">
+    <ul class="navbar-link">
+        <li><a href="#">Home <i class="bi bi-house"></i></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Our services</a></li>
+        <li><a href="#">Our gallery</a></li>
+        <li><a href="#">Our attendance</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Account <i class="bi bi-person-add"></i></a>
+           <ul class="dropdown-menu">
+            <li><a href="#">SignUp</a></li>
+            <li><a href="#">Sign In</a></li>
+           </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    </div>
+  </nav>
+  <!-- content section for tops careercenter -->
+
+  <div class="container mt-5">
+
+
+    <!-- <div class="card mx-auto border border-2 border-info">
+        <div class="card-body">
+            <h1 class="text-center text-info">TOPS</h1>
+            <h4  class="text-center text-dark">Career Center Login</h4>
+
+            <form method="post">
+                <div class="form-group col-md-9 mx-auto">
+                    <label class="mt-2">Mobile Number</label>
+                    <input type="text" name="mobile" placeholder="Mobile or email *" class="form-control mt-2">
+
+                </div>
+
+                <div class="form-group col-md-9 mx-auto">
+                    <label class="mt-2">Password</label>
+                    <input type="password" name="password" placeholder="Password *" class="form-control mt-2">
+
+                </div>
+                <div class="form-group col-md-9 mx-auto mt-3">
+                    <b><a href="">Forget Password ?</a></b>
+                    <input type="submit" name="login" value="Login"  class="btn btn-md btn-info w-100 mt-2">
+                </div>
+                <div class="form-group col-md-9 mx-auto mt-3">
+                    <b>Don't have an account ? &nbsp; <a href="" class="" data-bs-toggle="modal" data-bs-target="#register">Create account</a></b>
+                  
+
+                </div>
+            </form>
+
+        </div>
+    </div> -->
+
+
+    <!-- card -->
+
+    <div class="card p-3 mx-auto border border-2 border-info">
+        <h3 class="text-center text-info">TOPS</h3>
+        <h5  class="text-center text-dark">Career Center Login</h5>
+
+        <form method="post">
+            <div class="form-group col-md-9 mx-auto">
+                <label class="mt-2">Mobile Number</label>
+                <input type="text" name="mobile" placeholder="Mobile or email *" class="form-control mt-2">
+
+            </div>
+
+            <div class="form-group col-md-9 mx-auto">
+                <label class="mt-2">Password</label>
+                <input type="password" name="password" placeholder="Password *" class="form-control mt-2">
+
+            </div>
+            <div class="form-group col-md-9 mx-auto mt-3">
+                <b><a href="">Forget Password ?</a></b>
+                <input type="submit" name="login" value="Login"  class="btn btn-md btn-info w-100 mt-2">
+            </div>
+            <div class="form-group col-md-9 mx-auto mt-3">
+                <b>Don't have an account ? &nbsp; <a href="" class="" data-bs-toggle="modal" data-bs-target="#register">Create account</a></b>
+              
+
+            </div>
+        </form>
+
+    </div>
+    </div>
+
+
+
+
+  </div>
+  <!-- add modal here -->
+  <div class="modal fade" id="register" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content p-5">
+        <h4 class="text-center">Create Account <button class="btn btn-sm btn-danger float-end" data-bs-dismiss="modal">&times;</button></h4>
+        <hr class="border border-1 mx-auto w-25">
+        <h5 class="text-center text-info">TOPS</h5>
+        <h6  class="text-center text-dark">Career Center Register Form</h6>
+        <form method="post">
+
+            <div class="row">
+            <div class="form-group col-md-6 mt-3">
+                <input type="text" name="fname" placeholder="FirstName *" class="form-control">
+            </div>
+
+            <div class="form-group col-md-6 mt-3">
+                <input type="text" name="lname" placeholder="LastName *" class="form-control">
+            </div>
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="text" name="email" placeholder="Email *" class="form-control">
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="text" name="password" placeholder="Password *" class="form-control">
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="text" name="mobile" placeholder="Mobile *" class="form-control">
+            </div>
+
+            <div class="form-group mt-3">
+                <textarea  name="address" placeholder="Address *" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="file" name="photo" placeholder="File *" class="form-control">
+            </div>
+
+            <div class="form-group mt-3">
+                <select name="state"  placeholder="State *" class="form-control">
+                    <option value="">-select state-</option>
+                    <option value="1">Gujrat</option>
+                    <option value="2">Mahrastra</option>
+                    <option value="3">Rajsthan</option>
+
+                </select>
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="submit" name="submit" value="Register" class="btn btn-lg btn-info">
+                <input type="reset" name="reset" value="Reset" class="btn btn-lg btn-danger">
+            </div>
+
+            
+        </form>
+
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
